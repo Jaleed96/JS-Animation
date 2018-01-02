@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Herrera, Wilburt; Ur Rehman, Jaleed</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+    <script src="javascript/car.js"></script>
+</head>
+<body onLoad="init()">
+	<div class="container">
+    	<h1>COMP 1536 - Web Development - JavaScript Assignment</h1>
+    	<div>
+			<canvas id="drawCar" width="800" height="600"></canvas>
+		</div>
+		<div id="label">
+			<h3>Try changing the animation speed.</h3>
+		</div>
+		<div id='input-value'>
+			<input type="range" id="myRange" min="0" max="100" step="0.5" oninput="slideChecker()">
+		</div>
+		<footer>
+			<p>By: Wilburt Herrera (A01029698) Set B (<a href='ma&#105;l&#116;o&#58;w&#105;lb%7&#53;%72t_&#104;&#64;ho&#116;&#37;6Da%&#54;9l%&#50;&#69;&#99;&#111;m'>&#119;ilbur&#116;_h&#64;&#104;&#111;tmail&#46;c&#111;m</a>) & Jaleed Ur Rehman (A00964301) Set B (<a href='m&#97;ilto&#58;jal%6&#53;edu%&#55;&#50;r%6&#53;%&#54;&#56;ma%6E&#64;g&#109;%&#54;1&#105;l%2Eco&#109;'>&#106;aleedu&#114;rehm&#97;n&#64;&#103;&#109;ail&#46;&#99;om</a>)</p>
+			<h2>What we completed?</h2>
+			<p>We successfully fulfilled all requirements of the project.</p>
+			<h2>Major Challenges:</h2>
+			<p>We found integrating our input range to be sufficiently difficult. We had a single init() function which didn't allow us to 
+			invoke any functions when the input range changed its value. We tackled the problem by integrating the main init() function to
+			many different functions.</p>
+			<p>Having the smoke come out without leaving an unappealing trail also presented to be a challenge. We fixed that by using the globalComposite function
+			so graphic elements merge cleanly.</p>
+			<p>Giving a 3d perception to the car was also a challenge. It was, however, an excellent opportunity to learn about gradients allowing us to successfully give our car a 3d feel.</p>
+		</footer>
+	</div>
+</body>
+</html>
